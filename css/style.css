@@ -234,6 +234,7 @@ img {
 
 .about__content-image {
   position: relative;
+  flex: 1 1 30%;
 }
 
 .about__content-image::after {
@@ -248,10 +249,12 @@ img {
 
 .about__description {
   padding-left: 90px;
+  flex: 1 1 60%;
 }
 
 .about__paragraph {
   margin: 0;
+  width: 83%;
   font-size: 20px;
   line-height: 36px;
 }
