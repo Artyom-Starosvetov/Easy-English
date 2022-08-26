@@ -411,7 +411,16 @@ img {
 
 .slider__track_reviews {
   max-width: 1200px;
+  overflow: visible;
   margin: 0 auto;
+  position: relative;
+  padding-bottom: 232px;
+}
+
+.slider__list_reviews {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .review {
