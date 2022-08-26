@@ -209,7 +209,7 @@ img {
   position: relative;
   height: 500px;
   margin-bottom: 100px;
-  background: url(../img/main/decor/intro__image.png) top 0px right 13px no-repeat, url(../img/main/decor/intro__vector.svg) top 40px left -40px no-repeat;
+  background: url(../img/main/decor/intro__image.png) top 0 right 13px no-repeat, url(../img/main/decor/intro__vector.svg) top 40px left -40px no-repeat;
   background-size: 42%, auto;
 }
 
@@ -346,7 +346,6 @@ img {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding: 0 10px 10px;
 }
 
 .slide__title_cources {
@@ -370,7 +369,12 @@ img {
 }
 
 .slide__preview_cources {
+  width: 100%;
   margin-bottom: 30px;
+}
+
+.slide__preview_cources img {
+  width: 100%;
 }
 
 .splide__arrow {
@@ -397,24 +401,17 @@ img {
 }
 
 .features__cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   padding: 0 50px;
-}
-
-.features__card {
-  flex: 0 1 calc(50% - 45px);
+  gap: 40px 45px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto-fill, 1fr);
 }
 
 .features-card {
-  margin-bottom: 40px;
   padding: 45px 30px;
   border: 2px solid #FFD78B;
   border-radius: 10px;
-}
-
-.features-card:not(:nth-child(2n)) {
-  margin-right: 45px;
 }
 
 .features-card__title {
@@ -440,10 +437,10 @@ img {
 }
 
 .slider__track_reviews {
-  max-width: 1200px;
-  overflow: visible;
-  margin: 0 auto;
   position: relative;
+  overflow: visible;
+  max-width: 1200px;
+  margin: 0 auto;
   padding-bottom: 232px;
 }
 
@@ -455,20 +452,20 @@ img {
 
 .review {
   display: grid;
-  grid-template: [start] "avatar name" min-content [row2] [row2] "avatar desc" min-content [row3] [row3] "text text" 1fr [row-end]/65px 1fr;
+  padding: 30px 20px;
   border: 2px solid #E3A732;
   border-radius: 10px;
-  padding: 30px 20px;
+  grid-template: [start] "avatar name" min-content [row2] [row2] "avatar desc" min-content [row3] [row3] "text text" 1fr [row-end]/65px 1fr;
 }
 
 .review__image {
-  grid-area: avatar;
+  overflow: hidden;
   width: 45px;
   height: 45px;
-  background-color: #FFD78B;
-  border-radius: 50%;
-  overflow: hidden;
   text-align: center;
+  border-radius: 50%;
+  background-color: #FFD78B;
+  grid-area: avatar;
 }
 
 .review__img {
@@ -477,19 +474,19 @@ img {
 }
 
 .review__name {
-  grid-area: name;
   font-weight: 500;
   font-size: 11px;
+  grid-area: name;
 }
 
 .review__desc {
-  grid-area: desc;
   font-weight: 300;
   font-size: 8px;
+  grid-area: desc;
 }
 
 .review__text {
-  grid-area: text;
   font-size: 13px;
   line-height: 21px;
+  grid-area: text;
 }
