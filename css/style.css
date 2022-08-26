@@ -407,40 +407,50 @@ img {
 
 .slider__container_reviews {
   position: relative;
+}
+
+.slider__track_reviews {
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .review {
-  background: #FFFAF1;
+  display: grid;
+  grid-template: [start] "avatar name" min-content [row2] [row2] "avatar desc" min-content [row3] [row3] "text text" 1fr [row-end]/65px 1fr;
   border: 2px solid #E3A732;
   border-radius: 10px;
   padding: 30px 20px;
 }
 
-.author__image {
-  width: 25px;
-  height: 25px;
-  background-color: #eee;
+.review__image {
+  grid-area: avatar;
+  width: 45px;
+  height: 45px;
+  background-color: #FFD78B;
   border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
 }
 
-.author__img {
+.review__img {
   font-size: 8px;
   line-height: 100%;
 }
 
-.author__name {
+.review__name {
+  grid-area: name;
   font-weight: 500;
   font-size: 11px;
 }
 
-.author__desc {
+.review__desc {
+  grid-area: desc;
   font-weight: 300;
   font-size: 8px;
 }
 
 .review__text {
+  grid-area: text;
   font-size: 13px;
   line-height: 21px;
 }
