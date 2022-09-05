@@ -20,16 +20,16 @@
           <nav class="header-nav">
             <ul class="menu header-menu" id="header-menu">
               <li class="menu-item">
-                <a class="menu-link menu-link_effect_4" href="#">О нас</a>
+                <a class="int-link menu-link" href="#">О нас</a>
               </li>
               <li class="menu-item">
-                <a class="menu-link menu-link_effect_5" href="#">Курсы</a>
+                <a class="int-link menu-link" href="#">Курсы</a>
               </li>
               <li class="menu-item">
-                <a class="menu-link menu-link_effect_3" href="#">Особенности обучения</a>
+                <a class="int-link menu-link" href="#">Особенности обучения</a>
               </li>
               <li class="menu-item">
-                <a class="menu-link menu-link_effect_2" href="#">Отзывы</a>
+                <a class="int-link menu-link" href="#">Отзывы</a>
               </li>
             </ul>
           </nav>
@@ -45,10 +45,10 @@
             </div>
           </div>
         </section>
-        <article class="about page__about">
+        <section class="about page__about">
           <div class="container about__container">
             <h2 class="title_h2 about__title">О нас</h2>
-            <div class="about__content">
+            <article class="about__content">
               <div class="about__content-image">
                 <img src="img/main/content/about__img.jpg" alt="Our team">
               </div>
@@ -56,9 +56,9 @@
                 <p class="about__paragraph">Мы самая лучшая команда преподавателей по языка. Мы работаем как с детьми, так и со взрослыми.</p>
                 <p class="about__paragraph">Среди наших преподателей исключительно носители. Занятия происходят в онлайн формате без очного присутствия.</p>
               </div>
-            </div>
+            </article>
           </div>
-        </article>
+        </section>
         <section class="cources page__cources splide slider slider_cources" aria-labelledby="cources__title">
           <div class="container cources__container">
             <h2 class="title_h2 cources__title">Курсы</h2>
@@ -66,19 +66,19 @@
               <nav class="menu cources__menu menu_cources">
                 <ul class="menu_cources__list">
                   <li class="menu_cources__item">
-                    <button class="btn menu_cources__btn">Английский</button>
+                    <button class="btn int-link menu_cources__btn">Английский</button>
                   </li>
                   <li class="menu_cources__item">
-                    <button class="btn menu_cources__btn">Немецкий</button>
+                    <button class="btn int-link menu_cources__btn">Немецкий</button>
                   </li>
                   <li class="menu_cources__item">
-                    <button class="btn menu_cources__btn">Испанский</button>
+                    <button class="btn int-link menu_cources__btn">Испанский</button>
                   </li>
                   <li class="menu_cources__item">
-                    <button class="btn menu_cources__btn">Китайский</button>
+                    <button class="btn int-link menu_cources__btn">Китайский</button>
                   </li>
                   <li class="menu_cources__item">
-                    <button class="btn menu_cources__btn">Французский</button>
+                    <button class="btn int-link menu_cources__btn">Французский</button>
                   </li>
                 </ul>
               </nav>
@@ -89,34 +89,76 @@
               <div class="splide__track slider__track_cources">
                 <ul class="splide__list slider__list_cources">
                   <li class="splide__slide slider__item_cources slide_cources">
-                    <div class="splide__slide__container slide__preview_cources">
-                      <img src="img/main/decor/slider__preview_1.png" alt="Course preview">
+                    <div class="splide__slide__container">
+                      <div class="slide__content_cources">
+                        <div class="slide__preview_cources">
+                          <img src="img/main/decor/slider__preview_1.jpg" alt="Course preview">
+                        </div>
+                        <h3 class="title__h3 slide__title_cources">Интенсивный курс</h3>
+                        <p class="slide__text_cources">Для тех, у кого мало времени</p>
+                      </div>
+                      <a class="btn slide__btn_cources" href="#">Подробнее</a>
                     </div>
-                    <div class="slide__content_cources">
-                      <h3 class="slide__title_cources title__h3">Интенсивный курс</h3>
-                      <p class="slide__text_cources">Для тех, у кого мало времени</p>
-                    </div>
-                    <a class="btn slide__link_cources" href="#">Подробнее</a>
                   </li>
                   <li class="splide__slide slider__item_cources slide_cources">
-                    <div class="splide__slide__container slide__preview_cources">
-                      <img src="img/main/decor/slider__preview_2.png" alt="Course preview">
+                    <div class="splide__slide__container">
+                      <div class="slide__content_cources">
+                        <div class="slide__preview_cources">
+                          <img src="img/main/decor/slider__preview_2.jpg" alt="Course preview">
+                        </div>
+                        <h3 class="title__h3 slide__title_cources">Для бизнеса</h3>
+                        <p class="slide__text_cources">Для уверенных в себе бизнесменов</p>
+                      </div>
+                      <a class="btn slide__btn_cources" href="#">Подробнее</a>
                     </div>
-                    <div class="slide__content_cources">
-                      <h3 class="slide__title_cources title__h3">Для бизнеса</h3>
-                      <p class="slide__text_cources">Для уверенных в себе бизнесменов</p>
-                    </div>
-                    <a class="btn slide__link_cources" href="#">Подробнее</a>
                   </li>
                   <li class="splide__slide slider__item_cources slide_cources">
-                    <div class="splide__slide__container slide__preview_cources">
-                      <img src="img/main/decor/slider__preview_3.png" alt="Course preview">
+                    <div class="splide__slide__container">
+                      <div class="slide__content_cources">
+                        <div class="slide__preview_cources">
+                          <img src="img/main/decor/slider__preview_3.jpg" alt="Course preview">
+                        </div>
+                        <h3 class="title__h3 slide__title_cources">Для общения с друзьями</h3>
+                        <p class="slide__text_cources">Для тех, кто хочет общаться с иностранцами</p>
+                      </div>
+                      <a class="btn slide__btn_cources" href="#">Подробнее</a>
                     </div>
-                    <div class="slide__content_cources">
-                      <h3 class="slide__title_cources title__h3">Для общения с друзьями</h3>
-                      <p class="slide__text_cources">Для тех, кто хочет общаться с иностранцами</p>
+                  </li>
+                  <li class="splide__slide slider__item_cources slide_cources">
+                    <div class="splide__slide__container">
+                      <div class="slide__content_cources">
+                        <div class="slide__preview_cources">
+                          <img src="img/main/decor/slider__preview_4.jpg" alt="Course preview">
+                        </div>
+                        <h3 class="title__h3 slide__title_cources">Для работы в иностранной компании</h3>
+                        <p class="slide__text_cources">Для тех, кто хочет работать за пределами своей страны</p>
+                      </div>
+                      <a class="btn slide__btn_cources" href="#">Подробнее</a>
                     </div>
-                    <a class="btn slide__link_cources" href="#">Подробнее</a>
+                  </li>
+                  <li class="splide__slide slider__item_cources slide_cources">
+                    <div class="splide__slide__container">
+                      <div class="slide__content_cources">
+                        <div class="slide__preview_cources">
+                          <img src="img/main/decor/slider__preview_5.jpg" alt="Course preview">
+                        </div>
+                        <h3 class="title__h3 slide__title_cources">Для себя</h3>
+                        <p class="slide__text_cources">Для тех, кто хочет знать язык для себя</p>
+                      </div>
+                      <a class="btn slide__btn_cources" href="#">Подробнее</a>
+                    </div>
+                  </li>
+                  <li class="splide__slide slider__item_cources slide_cources">
+                    <div class="splide__slide__container">
+                      <div class="slide__content_cources">
+                        <div class="slide__preview_cources">
+                          <img src="img/main/decor/slider__preview_6.jpg" alt="Course preview">
+                        </div>
+                        <h3 class="title__h3 slide__title_cources">Для учебы в иностранном университете</h3>
+                        <p class="slide__text_cources">Для тех, кто хочет получить образование за границей</p>
+                      </div>
+                      <a class="btn slide__btn_cources" href="#">Подробнее</a>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -124,7 +166,6 @@
             </div>
           </div>
         </section>
-        <!-- section-->
         <section class="features page__features">
           <div class="container features__container">
             <h2 class="title_h2 features__title">Особенности обучения</h2>
@@ -160,6 +201,10 @@
           <div class="container reviews__container">
             <h2 class="title_h2 reviews__title">Что говорят о нас наши ученики</h2>
             <div class="slider__container_reviews">
+              <div class="splide__arrows">
+                <btn class="btn splide__arrow splide__arrow--prev"></btn>
+                <btn class="btn splide__arrow splide__arrow--next"></btn>
+              </div>
               <div class="splide__track slider__track_reviews">
                 <ul class="splide__list slider__list_reviews">
                   <li class="splide__slide slider__item_reviews review">
@@ -168,15 +213,15 @@
                     </div>
                     <div class="review__name">Антон Сидоров</div>
                     <div class="review__desc">Предприниматель</div>
-                    <div class="review__text">Это самая лучшая школа по языкам! Все очень понятно, замечательные преподаватели, рекомендую школу всем своим друзьям!</div>
+                    <p class="review__text">Это самая лучшая школа по языкам! Все очень понятно, замечательные преподаватели, рекомендую школу всем своим друзьям!</p>
                   </li>
                   <li class="splide__slide slider__item_reviews review">
                     <div class="review__image">
                       <img class="review__img" src="img/main/page/reviews/review/img/avatar_2.jpg" onerror="this.style.display='none'" alt="Student avatar">
                     </div>
                     <div class="review__name">Иван Сапольский</div>
-                    <div class="review__desc">Предприниматель</div>
-                    <div class="review__text">Мне очень нравится учиться в EasyEnglish!</div>
+                    <div class="review__desc">Гид</div>
+                    <p class="review__text">Мне очень нравится учиться в EasyEnglish!</p>
                   </li>
                   <li class="splide__slide slider__item_reviews review">
                     <div class="review__image">
@@ -184,7 +229,7 @@
                     </div>
                     <div class="review__name">Дмитрий Павлов</div>
                     <div class="review__desc">Офисный сотрудник</div>
-                    <div class="review__text">Обожаю занятия по французскому языку с Жаном! Прогресс идет очень быстро!</div>
+                    <p class="review__text">Обожаю занятия по французскому языку с Жаном! Прогресс идет очень быстро!</p>
                   </li>
                   <li class="splide__slide slider__item_reviews review">
                     <div class="review__image">
@@ -192,18 +237,46 @@
                     </div>
                     <div class="review__name">Станислав Поддубный</div>
                     <div class="review__desc">Менеджер</div>
-                    <div class="review__text">Вы лучшие на рынке, за языками только к вам!</div>
+                    <p class="review__text">Вы лучшие на рынке, за языками только к вам!</p>
                   </li>
                   <li class="splide__slide slider__item_reviews review">
                     <div class="review__image">
-                      <img class="review__img" src="img/main/page/reviews/review/img/avatar_1.jpg" onerror="this.style.display='none'" alt="Student avatar">
+                      <img class="review__img" src="img/main/page/reviews/review/img/avatar_5.png" onerror="this.style.display='none'" alt="Student avatar">
                     </div>
-                    <div class="review__name">Антон Сидоров</div>
-                    <div class="review__desc">Предприниматель</div>
-                    <div class="review__text">Это самая лучшая школа по языкам! Все очень понятно, замечательные преподаватели, рекомендую школу всем своим друзьям!</div>
+                    <div class="review__name">Ангелина Веселовская</div>
+                    <div class="review__desc">Контент-менеджер</div>
+                    <p class="review__text">Нужен был английский для работы, но знаний было мало. Решила обратиться в EasyEnglish, и не пожалела. У меня уже хороший уровень английского после месяца занятий</p>
+                  </li>
+                  <li class="splide__slide slider__item_reviews review">
+                    <div class="review__image">
+                      <img class="review__img" src="img/main/page/reviews/review/img/avatar_6.jpg" onerror="this.style.display='none'" alt="Student avatar">
+                    </div>
+                    <div class="review__name">Вероника Смоленская</div>
+                    <div class="review__desc">Генеральный директор</div>
+                    <p class="review__text">Устроилась на работу мечты только благодаря специалистам из EasyEnglish! Быстро подтянула свой язык и успешко прошла собеседование.</p>
+                  </li>
+                  <li class="splide__slide slider__item_reviews review">
+                    <div class="review__image">
+                      <img class="review__img" src="img/main/page/reviews/review/img/avatar_7.jpg" onerror="this.style.display='none'" alt="Student avatar">
+                    </div>
+                    <div class="review__name">Валерий Старовойтов</div>
+                    <div class="review__desc">Рукодоводитель департамента</div>
+                    <p class="review__text">Учу английский в EasyEnglish уже 8 месяцев и вижу огромный прогресс. Еще через пару месяцев и я готов переезжать в Англию. Thank you very much!</p>
                   </li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </section>
+        <section class="feedback page__feedback">
+          <div class="container feedback__container">
+            <h2 class="title_h2 feedback__title">Остались вопросы?</h2>
+            <div class="feedback__content">
+              <p class="feedback__text">Оставьте свой номер телефона и наши менеджеры с вами свяжутся.</p>
+              <form class="feedback__form" action="">
+                <input class="feedback__tel" id="feedback__tel" type="tel" name="" value="+  7">
+                <button class="btn feedback__btn_submit" type="submit">отправить</button>
+              </form>
             </div>
           </div>
         </section>
