@@ -306,6 +306,10 @@ img {
   border-radius: 10px;
 }
 
+.slide__content_cources {
+  width: 100%;
+}
+
 .slide__title_cources {
   margin-bottom: 15px;
 }
@@ -338,7 +342,11 @@ img {
   overflow: hidden;
   width: 100%;
   margin-bottom: 30px;
+  font-size: 20px;
+  text-align: center;
   border-radius: 10px 10px 4px 4px;
+  background-color: #FFD78B;
+  aspect-ratio: 1.47;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 76%, 0 100%);
 }
 
